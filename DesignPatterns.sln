@@ -15,6 +15,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonPattern.WithoutPat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonPattern.WithPattern", "SingletonPattern\SingletonPattern.WithPattern\SingletonPattern.WithPattern.csproj", "{DC5592E9-D1DD-4A2B-93B0-61FD82F2AF16}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FacadePattern", "FacadePattern", "{44ECB988-E3A7-48FA-B944-4F385602C6B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacadePattern.WithoutPattern", "FacadePattern\FacadePattern.WithoutPattern\FacadePattern.WithoutPattern.csproj", "{80530128-284E-4BF0-81DB-71EEAB30E931}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacadePattern.WithPattern", "FacadePattern\FacadePattern.WithPattern\FacadePattern.WithPattern.csproj", "{A5909690-012E-453D-9F15-C75EE427C77E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +34,8 @@ Global
 		{3E96F8A7-0D5A-4AA2-9708-106C31254EE3} = {19CC7E8F-D10B-4FA7-A4EF-D30AC3B74F33}
 		{0F430F96-7D0E-40A6-BC2F-582B4887E8EE} = {195DC09F-B449-4EDE-B460-256AFA8B4162}
 		{DC5592E9-D1DD-4A2B-93B0-61FD82F2AF16} = {195DC09F-B449-4EDE-B460-256AFA8B4162}
+		{80530128-284E-4BF0-81DB-71EEAB30E931} = {44ECB988-E3A7-48FA-B944-4F385602C6B5}
+		{A5909690-012E-453D-9F15-C75EE427C77E} = {44ECB988-E3A7-48FA-B944-4F385602C6B5}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{5B709364-032C-4447-AA31-DA2E0431614E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -46,5 +54,13 @@ Global
 		{DC5592E9-D1DD-4A2B-93B0-61FD82F2AF16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC5592E9-D1DD-4A2B-93B0-61FD82F2AF16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC5592E9-D1DD-4A2B-93B0-61FD82F2AF16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80530128-284E-4BF0-81DB-71EEAB30E931}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80530128-284E-4BF0-81DB-71EEAB30E931}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80530128-284E-4BF0-81DB-71EEAB30E931}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80530128-284E-4BF0-81DB-71EEAB30E931}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5909690-012E-453D-9F15-C75EE427C77E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5909690-012E-453D-9F15-C75EE427C77E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5909690-012E-453D-9F15-C75EE427C77E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5909690-012E-453D-9F15-C75EE427C77E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
