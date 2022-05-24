@@ -29,10 +29,10 @@ In my opinion, this defines very well what a design pattern is.
 | Type | Name | Information |
 | -- | -- | -- |
 | Creational patterns | Builder | [Go to detail 📄](./BuilderPattern/README.md) |
+| Creational patterns | Singleton | [Go to detail 📄](./SingletonPattern/README.md) |
 
 Another design patterns that I will add in the future:
 
-- [ ] Singleton
 - [ ] Facade
 - [ ] Command
 - [ ] Null Object
