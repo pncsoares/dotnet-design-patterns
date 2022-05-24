@@ -4,8 +4,8 @@ namespace BuilderPattern.WithPattern;
 
 public class Address : IAddress
 {
-    public string Street { get; private set; }
-    public string Zip { get; private set; }
+    public string Street { get; private set; } = string.Empty;
+    public string Zip { get; private set; } = string.Empty;
 
     /// <inheritdoc />
     public string Print()
@@ -15,7 +15,7 @@ public class Address : IAddress
 
         return stringBuilder.ToString();
     }
-    
+
     private Address()
     {
     }
@@ -34,14 +34,14 @@ public class Address : IAddress
             _address.Street = street;
             return this;
         }
-        
+
         public AddressBuilder WithZip(string zip)
         {
             _address.Zip = zip;
             return this;
         }
-        
-        public Address Build()
+
+        public Address? Build()
         {
             return _address;
         }

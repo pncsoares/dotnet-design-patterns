@@ -4,16 +4,21 @@ namespace BuilderPattern.WithPattern;
 
 public class User : IUser
 {
-    public string Name { get; private set; }
+    public string Name { get; private set; } = string.Empty;
     public int Age { get; private set; }
-    public Address Address { get; private set; }
+    public Address? Address { get; private set; }
 
     /// <inheritdoc />
     public string Print()
     {
         var stringBuilder = new StringBuilder();
-        stringBuilder.Append($"{Name} has {Age} years old and lives in {Address.Print()}");
+        stringBuilder.Append($"{Name} has {Age} years old");
 
+        if (Address != null)
+        {
+            stringBuilder.Append($" and lives in {Address.Print()}");
+        }
+        
         return stringBuilder.ToString();
     }
 
@@ -42,7 +47,7 @@ public class User : IUser
             return this;
         }
 
-        public UserBuilder WithAddress(Address address)
+        public UserBuilder WithAddress(Address? address)
         {
             _user.Address = address;
             return this;
