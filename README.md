@@ -31,10 +31,10 @@ In my opinion, this defines very well what a design pattern is.
 | Creational patterns | Builder | [Go to detail 📄](./BuilderPattern/README.md) |
 | Creational patterns | Singleton | [Go to detail 📄](./SingletonPattern/README.md) |
 | Structural patterns | Facade | [Go to detail 📄](./FacadePattern/README.md) |
+| Behavioral patterns | Command | [Go to detail 📄](./CommandPattern/README.md) |
 
 Another design patterns that I will add in the future:
 
-- [ ] Command
 - [ ] Null Object
 - [ ] Factory
 - [ ] Observer
