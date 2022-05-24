@@ -68,6 +68,17 @@ Go to the project directory
   cd dotnet-design-patterns
 ```
 
+## Run the Console Applications
+
+Open terminal and execute the command
+
+```bash
+  dotnet run --project projectPath/projectName.csproj
+  
+  # example
+  # dotnet run --project ./BuilderPattern/BuilderPattern.WithoutPattern/BuilderPattern.WithoutPattern.csproj
+```
+
 # License
 
 MIT

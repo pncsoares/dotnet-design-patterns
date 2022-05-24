@@ -15,3 +15,15 @@ Separate the construction of a complex object from its representation, allowing 
 - It does create more code
 - Too many constructors to maintain
 - Error prone because many fields has same type
+
+# See the code result
+
+Open terminal and execute the command
+
+```bash
+  # without pattern
+  dotnet run --project ./BuilderPattern/BuilderPattern.WithoutPattern/BuilderPattern.WithoutPattern.csproj
+
+  # with pattern
+  dotnet run --project ./BuilderPattern/BuilderPattern.WithPattern/BuilderPattern.WithPattern.csproj
+```
