@@ -1,7 +1,73 @@
-# dotnet-design-patterns
+# Design Patterns
 
-This repository is under construction... 🚧
+Design patterns written in C#
 
-Please wait a few more days and I'll start to add design patterns 🙏
+## Definition
 
-Thanks
+A software design pattern is a general, reusable solution to a commonly occurring problem within a given context in software design. 
+Design patterns are formalized best practices that the programmer can use to solve common problems when designing an application or system.
+
+[👆 Source](https://en.wikipedia.org/wiki/Software_design_pattern)
+
+In my opinion, this defines very well what a design pattern is.
+
+## Advantages of using them
+
+- Promote easier changes
+- Turns the objects reusable
+- Keeps objects small and specialized
+
+## Types
+
+- Creational patterns
+- Structural patterns
+- Behavioral patterns
+- Concurrency patterns
+
+## Code examples
+
+| Type | Name | Information |
+| -- | -- | -- |
+| Creational patterns | Builder | [Go to detail 📄](./BuilderPattern/README.md) |
+
+Another design patterns that I will add in the future:
+
+- [ ] Singleton
+- [ ] Facade
+- [ ] Command
+- [ ] Null Object
+- [ ] Factory
+- [ ] Observer
+- [ ] Decorator
+- [ ] Strategy
+- [ ] Adapter
+- [ ] Iterator
+- [ ] Proxy
+- [ ] Composite
+- [ ] Bridge
+
+# Setup
+
+## Clone repository
+
+Create and go to the directory where you want to place the repository
+
+```bash
+  cd my-directory
+```
+
+Clone the project
+
+```bash
+  git clone https://github.com/pncsoares/dotnet-design-patterns.git
+```
+
+Go to the project directory
+
+```bash
+  cd dotnet-design-patterns
+```
+
+# License
+
+MIT
