@@ -24,6 +24,26 @@ In my opinion, this defines very well what a design pattern is.
 - Behavioral patterns
 - Concurrency patterns
 
+### Creational patterns
+
+Deal with object creation mechanisms, trying to create objects in a manner suitable to the situation. The basic form of object creation could result in design problems or in added complexity to the design. Creational design patterns solve this problem by somehow controlling this object creation.
+
+Are composed of two dominant ideas:
+1. Encapsulating knowledge about which concrete classes the system uses;
+1. Hiding how instances of these concrete classes are created and combined.
+
+### Structural patterns
+
+Ease the design by identifying a simple way to realize relationships among entities. 
+
+### Behavioral patterns
+
+Identify common communication patterns among objects. By doing so, these patterns increase flexibility in carrying out communication. 
+
+### Concurrency patterns
+
+Deal with the multi-threaded programming paradigm. 
+
 # Code examples and documentation
 
 ## Creational patterns
