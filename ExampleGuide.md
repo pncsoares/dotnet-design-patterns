@@ -94,3 +94,7 @@ If you created a kind of project that allows it to run, add instructions so who 
 ## Add documentation
 
 Finish the good work by adding some documentation, scenarios, pros and cons or other things that you know about the design pattern.
+
+## Add images
+
+If you want to show something you can screenshot and then reference that in a markdown file. To do that just save the image or the screenshot in `./.github/images/{DesignPatternName}Pattern/image-name.extension`
