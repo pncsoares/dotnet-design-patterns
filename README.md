@@ -24,27 +24,96 @@ In my opinion, this defines very well what a design pattern is.
 - Behavioral patterns
 - Concurrency patterns
 
-## Code examples
+# Code examples and documentation
+
+## Creational patterns
 
 | Type | Name | Information |
 | -- | -- | -- |
 | Creational patterns | Builder | [Go to detail 📄](./BuilderPattern/README.md) |
 | Creational patterns | Singleton | [Go to detail 📄](./SingletonPattern/README.md) |
+
+### TODO creational patterns
+
+- [ ] Factory
+- [ ] Abstract Factory
+- [ ] Dependency Injection
+- [ ] Lazy Initialization
+- [ ] Multiton
+- [ ] Object Pool
+- [ ] Prototype
+- [ ] Resource Acquisition Is Initialization (RAII)
+
+### Structural patterns
+
+| Type | Name | Information |
+| -- | -- | -- |
 | Structural patterns | Facade | [Go to detail 📄](./FacadePattern/README.md) |
+
+### TODO structural patterns
+
+- [ ] Adapter
+- [ ] Bridge
+- [ ] Composite
+- [ ] Decorator
+- [ ] Extension Object
+- [ ] Flyweight
+- [ ] Front Controller
+- [ ] Marker
+- [ ] Module
+- [ ] Proxy
+- [ ] Twin
+
+### Behavioral patterns
+
+| Type | Name | Information |
+| -- | -- | -- |
 | Behavioral patterns | Command | [Go to detail 📄](./CommandPattern/README.md) |
 
-Another design patterns that I will add in the future:
+### TODO behavioral patterns
 
-- [ ] Null Object
-- [ ] Factory
-- [ ] Observer
-- [ ] Decorator
-- [ ] Strategy
-- [ ] Adapter
+- [ ] Blackboard
+- [ ] Chain Of Responsibility
+- [ ] Interpreter
 - [ ] Iterator
-- [ ] Proxy
-- [ ] Composite
-- [ ] Bridge
+- [ ] Mediator
+- [ ] Memento
+- [ ] Null Object
+- [ ] Observer
+- [ ] Servant
+- [ ] Specification
+- [ ] State
+- [ ] Strategy
+- [ ] Template Method
+- [ ] Visitor
+- [ ] Dispose
+
+### Concurrency patterns
+
+| Type | Name | Information |
+| -- | -- | -- |
+| - | - | - |
+
+### TODO concurrency patterns
+
+- [ ] Active Object
+- [ ] Balking
+- [ ] Binding Properties
+- [ ] Compute Kernel
+- [ ] Double-Checked Locking
+- [ ] Event-Based Asynchronous
+- [ ] Guarded Suspension
+- [ ] Join
+- [ ] Lock
+- [ ] Messaging
+- [ ] Monitor Object
+- [ ] Reactor
+- [ ] Read-Write Lock
+- [ ] Scheduler
+- [ ] Thread Pool
+- [ ] Thread-Specific Storage
+- [ ] Safe Concurrency With Exclusive Ownership
+- [ ] CPU Atomic Operation
 
 # Setup
 
