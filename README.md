@@ -137,7 +137,7 @@ Deal with the multi-threaded programming paradigm.
 - [ ] Safe Concurrency With Exclusive Ownership
 - [ ] CPU Atomic Operation
 
-# Contribution
+# 🤲 Contribute
 
 Any contributions are highly appreciated 🙏
 
@@ -146,3 +146,9 @@ You can contribute in some ways:
 1. If you want others to add a design pattern, go to `issues` tab and create a new issue with the label `new design pattern` and add the name of the design pattern in the `title`;
 1. Fork the project and submit a PR with an improvement of any kind, code, documentation, scenarios, pros, cons, spelling, etc;
 1. If you noticed something and want to register it so others can handle it, create a new issue with the label that better fits that scenario and fill as much information as you can.
+
+# 📢 Give feedback
+
+Do you have any suggestions on how we could improve this project overall? Let us know! We'd love to hear your feedback!
+
+Use the `discussions` tab for this purpose. Choose the category that better fits the scope of the discussion.
