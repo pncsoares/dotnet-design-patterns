@@ -2,6 +2,8 @@
 
 Design patterns written in C#
 
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](./CONTRIBUTING.md)
+
 ## Definition
 
 A software design pattern is a general, reusable solution to a commonly occurring problem within a given context in software design. 
@@ -135,39 +137,12 @@ Deal with the multi-threaded programming paradigm.
 - [ ] Safe Concurrency With Exclusive Ownership
 - [ ] CPU Atomic Operation
 
-# Setup
+# Contribution
 
-## Clone repository
+Any contributions are highly appreciated 🙏
 
-Create and go to the directory where you want to place the repository
-
-```bash
-  cd my-directory
-```
-
-Clone the project
-
-```bash
-  git clone https://github.com/pncsoares/dotnet-design-patterns.git
-```
-
-Go to the project directory
-
-```bash
-  cd dotnet-design-patterns
-```
-
-## Run the Console Applications
-
-Open terminal and execute the command
-
-```bash
-  dotnet run --project projectPath/projectName.csproj
-  
-  # example
-  # dotnet run --project ./BuilderPattern/BuilderPattern.WithoutPattern/BuilderPattern.WithoutPattern.csproj
-```
-
-# License
-
-MIT
+You can contribute in some ways:
+1. Fork the project and submit a PR with the new design pattern. Before doing that, please make sure that you read and follow the [Contribution Guide](./CONTRIBUTING.md);
+1. If you want others to add a design pattern, go to `issues` tab and create a new issue with the label `new design pattern` and add the name of the design pattern in the `title`;
+1. Fork the project and submit a PR with an improvement of any kind, code, documentation, scenarios, pros, cons, spelling, etc;
+1. If you noticed something and want to register it so others can handle it, create a new issue with the label that better fits that scenario and fill as much information as you can.
