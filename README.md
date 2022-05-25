@@ -66,7 +66,7 @@ Deal with the multi-threaded programming paradigm.
 - [ ] Prototype
 - [ ] Resource Acquisition Is Initialization (RAII)
 
-### Structural patterns
+## Structural patterns
 
 | Type | Name | Information |
 | -- | -- | -- |
@@ -86,7 +86,7 @@ Deal with the multi-threaded programming paradigm.
 - [ ] Proxy
 - [ ] Twin
 
-### Behavioral patterns
+## Behavioral patterns
 
 | Type | Name | Information |
 | -- | -- | -- |
@@ -110,7 +110,7 @@ Deal with the multi-threaded programming paradigm.
 - [ ] Visitor
 - [ ] Dispose
 
-### Concurrency patterns
+## Concurrency patterns
 
 | Type | Name | Information |
 | -- | -- | -- |
