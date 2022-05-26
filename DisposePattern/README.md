@@ -8,11 +8,12 @@ To help ensure that resources are always cleaned up appropriately, a Dispose met
 
 ## Advantages
 
-- ...
+- Improves performance
+- Optimizes memory by releasing unmanageable objects and scarce resources
 
 ## Disadvantages
 
-- ...
+- Writing code for an object's finalizer is a complex task that can cause problems if not done correctly
 
 ## Why use `IHttpClientFactory`?
 
