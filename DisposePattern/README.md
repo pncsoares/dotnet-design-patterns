@@ -31,35 +31,35 @@ A class derived from a class that implements the IDisposable interface shouldn't
 Here's an example of the general pattern for implementing the dispose pattern for a derived class that uses a safe handle:
 
 ```csharp
-    using Microsoft.Win32.SafeHandles;
-    using System;
-    using System.Runtime.InteropServices;
+using Microsoft.Win32.SafeHandles;
+using System;
+using System.Runtime.InteropServices;
 
-    class DerivedClassWithSafeHandle : BaseClassWithSafeHandle
+class DerivedClassWithSafeHandle : BaseClassWithSafeHandle
+{
+    // To detect redundant calls
+    private bool _disposedValue;
+
+    // Instantiate a SafeHandle instance.
+    private SafeHandle _safeHandle = new SafeFileHandle(IntPtr.Zero, true);
+
+    // Protected implementation of Dispose pattern.
+    protected override void Dispose(bool disposing)
     {
-        // To detect redundant calls
-        private bool _disposedValue;
-
-        // Instantiate a SafeHandle instance.
-        private SafeHandle _safeHandle = new SafeFileHandle(IntPtr.Zero, true);
-
-        // Protected implementation of Dispose pattern.
-        protected override void Dispose(bool disposing)
+        if (!_disposedValue)
         {
-            if (!_disposedValue)
+            if (disposing)
             {
-                if (disposing)
-                {
-                    _safeHandle.Dispose();
-                }
-
-                _disposedValue = true;
+                _safeHandle.Dispose();
             }
 
-            // Call base class implementation.
-            base.Dispose(disposing);
+            _disposedValue = true;
         }
+
+        // Call base class implementation.
+        base.Dispose(disposing);
     }
+}
 ```
 
 ## 📝 And what about the `using` keyword?
@@ -67,25 +67,25 @@ Here's an example of the general pattern for implementing the dispose pattern fo
 We can find the following code in the `DisposePattern.WithPattern` project:
 
 ```csharp
-    using var serviceProxy = new ServiceProxy(null);
+using var serviceProxy = new ServiceProxy(null);
 ```
 
 The `using` keyword is basically a `try` + `finally` block, so the code above, behind the hood is reduced to the following:
 
 ```csharp
-    ServiceProxy serviceProxy = null;
+ServiceProxy serviceProxy = null;
 
-    try
-    {
-        serviceProxy = new ServiceProxy(null);
+try
+{
+    serviceProxy = new ServiceProxy(null);
 
-        serviceProxy.Get();
-        serviceProxy.Post("");
-    }
-    finally
-    {
-        serviceProxy.Dispose();
-    }
+    serviceProxy.Get();
+    serviceProxy.Post("");
+}
+finally
+{
+    serviceProxy.Dispose();
+}
 ```
 
 In order for you to use the `using` keyword, you must implement the `IDisposable` interface, otherwise, you will see an error in the `Program.cs`:
@@ -111,10 +111,10 @@ If the caller of the class forget to use the `using` keyword, you will have a me
 ✅ Add a destructor, like this:
 
 ```csharp
-    ~ServiceProxy()
-    {
-        Dispose(false);
-    }
+~ServiceProxy()
+{
+    Dispose(false);
+}
 ```
 
 And then you will see a warning in the IDE saying:
@@ -124,11 +124,11 @@ And then you will see a warning in the IDE saying:
 ✅ To solve it, you need to change the `Dispose` method to be like this:
 
 ```csharp
-    public void Dispose()
-    {
-        Dispose(true);
-        GC.SuppressFinalize(this);
-    }
+public void Dispose()
+{
+    Dispose(true);
+    GC.SuppressFinalize(this);
+}
 ```
 
 Now, the caller can use the `using` keyword or not because your class is prepared to destruct itself after being used.
