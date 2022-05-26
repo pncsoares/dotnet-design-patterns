@@ -27,6 +27,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandPattern.WithPattern"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandPattern.WithoutPattern", "CommandPattern\CommandPattern.WithoutPattern\CommandPattern.WithoutPattern.csproj", "{A20254D6-F779-481D-93AC-759C68CFC26D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DisposePattern", "DisposePattern", "{4734A65D-B4E2-476C-96ED-66029475C4C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisposePattern.WithoutPattern", "DisposePattern\DisposePattern.WithoutPattern\DisposePattern.WithoutPattern.csproj", "{59FDEE96-FE6E-40D2-B250-AB33A65FA2A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisposePattern.WithPattern", "DisposePattern\DisposePattern.WithPattern\DisposePattern.WithPattern.csproj", "{F9B11920-350C-404F-9DDF-8FA0FEAC2861}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +50,8 @@ Global
 		{A5909690-012E-453D-9F15-C75EE427C77E} = {44ECB988-E3A7-48FA-B944-4F385602C6B5}
 		{6FB3C3EE-8A87-4723-929D-34028284527F} = {EBDBAC4F-4753-4D97-8BF3-180D7A2F9984}
 		{A20254D6-F779-481D-93AC-759C68CFC26D} = {EBDBAC4F-4753-4D97-8BF3-180D7A2F9984}
+		{59FDEE96-FE6E-40D2-B250-AB33A65FA2A1} = {4734A65D-B4E2-476C-96ED-66029475C4C3}
+		{F9B11920-350C-404F-9DDF-8FA0FEAC2861} = {4734A65D-B4E2-476C-96ED-66029475C4C3}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{5B709364-032C-4447-AA31-DA2E0431614E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -78,5 +86,13 @@ Global
 		{A20254D6-F779-481D-93AC-759C68CFC26D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A20254D6-F779-481D-93AC-759C68CFC26D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A20254D6-F779-481D-93AC-759C68CFC26D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59FDEE96-FE6E-40D2-B250-AB33A65FA2A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59FDEE96-FE6E-40D2-B250-AB33A65FA2A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59FDEE96-FE6E-40D2-B250-AB33A65FA2A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59FDEE96-FE6E-40D2-B250-AB33A65FA2A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9B11920-350C-404F-9DDF-8FA0FEAC2861}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9B11920-350C-404F-9DDF-8FA0FEAC2861}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9B11920-350C-404F-9DDF-8FA0FEAC2861}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9B11920-350C-404F-9DDF-8FA0FEAC2861}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

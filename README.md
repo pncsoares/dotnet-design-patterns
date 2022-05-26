@@ -91,6 +91,7 @@ Deal with the multi-threaded programming paradigm.
 | Name | Information |
 | -- | -- |
 | Command | [Go to detail 📄](./CommandPattern/README.md) |
+| Dispose | [Go to detail 📄](./DisposePattern/README.md) |
 
 ### TODO behavioral patterns
 
@@ -108,7 +109,6 @@ Deal with the multi-threaded programming paradigm.
 - [ ] Strategy
 - [ ] Template Method
 - [ ] Visitor
-- [ ] Dispose
 
 ## Concurrency patterns
 
