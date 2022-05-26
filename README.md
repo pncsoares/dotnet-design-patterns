@@ -50,10 +50,10 @@ Deal with the multi-threaded programming paradigm.
 
 ## Creational patterns
 
-| Type | Name | Information |
-| -- | -- | -- |
-| Creational patterns | Builder | [Go to detail 📄](./BuilderPattern/README.md) |
-| Creational patterns | Singleton | [Go to detail 📄](./SingletonPattern/README.md) |
+| Name | Information |
+| -- | -- |
+| Builder | [Go to detail 📄](./BuilderPattern/README.md) |
+| Singleton | [Go to detail 📄](./SingletonPattern/README.md) |
 
 ### TODO creational patterns
 
@@ -68,9 +68,9 @@ Deal with the multi-threaded programming paradigm.
 
 ## Structural patterns
 
-| Type | Name | Information |
-| -- | -- | -- |
-| Structural patterns | Facade | [Go to detail 📄](./FacadePattern/README.md) |
+| Name | Information |
+| -- | -- |
+| Facade | [Go to detail 📄](./FacadePattern/README.md) |
 
 ### TODO structural patterns
 
@@ -88,9 +88,9 @@ Deal with the multi-threaded programming paradigm.
 
 ## Behavioral patterns
 
-| Type | Name | Information |
-| -- | -- | -- |
-| Behavioral patterns | Command | [Go to detail 📄](./CommandPattern/README.md) |
+| Name | Information |
+| -- | -- |
+| Command | [Go to detail 📄](./CommandPattern/README.md) |
 
 ### TODO behavioral patterns
 
@@ -112,9 +112,9 @@ Deal with the multi-threaded programming paradigm.
 
 ## Concurrency patterns
 
-| Type | Name | Information |
-| -- | -- | -- |
-| - | - | - |
+| Name | Information |
+| -- | -- |
+| - | - |
 
 ### TODO concurrency patterns
 
