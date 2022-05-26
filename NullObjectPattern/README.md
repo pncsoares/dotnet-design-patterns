@@ -32,6 +32,18 @@ Its use is hard-coded
 
 - Can necessitate creating a new NullObject class for every new AbstractObject class.
 
+# See the code result
+
+Open terminal and execute the command
+
+```bash
+  # without pattern
+  dotnet run --project ./NullObjectPattern/NullObjectPattern.WithoutPattern/NullObjectPattern.WithoutPattern.csproj
+
+  # with pattern
+  dotnet run --project ./NullObjectPattern/NullObjectPattern.WithPattern/NullObjectPattern.WithPattern.csproj
+```
+
 ## Code examples documentation
 
 [📄 Code without design pattern](./NullObjectPattern.WithoutPattern/README.md)
