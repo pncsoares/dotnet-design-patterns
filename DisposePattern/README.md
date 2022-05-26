@@ -89,17 +89,19 @@ finally
 ```
 
 In order for you to use the `using` keyword, you must implement the `IDisposable` interface, otherwise, you will see an error in the `Program.cs`:
+
 ![ServiceProxy.cs without IDisposable](../.github/images/DisposePattern/service-proxy-without-idisposable.png)
+
 ![Program.cs using error](../.github/images/DisposePattern/program-using-error.png)
 
 Also, the using without braces were introduced in C#8 so, if you try it on C#7 for example, it will not work and you need to add braces, to be like this:
 
 ```csharp
-    using (var serviceProxy = new ServiceProxy(null))
-    {
-        serviceProxy.Get();
-        serviceProxy.Post("");
-    }
+using (var serviceProxy = new ServiceProxy(null))
+{
+    serviceProxy.Get();
+    serviceProxy.Post("");
+}
 ```
 
 [📄 Microsoft documentation about `using` keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using)
