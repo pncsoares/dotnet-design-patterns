@@ -157,4 +157,6 @@ Use the `discussions` tab for this purpose. Choose the category that better fits
 
 If the information from this repo was useful to you in any way, make sure you give it a star ⭐
 
-This way others can find it and benefit too! Together we can grow and make our community better! 
+This way others can find it and benefit too! Together we can grow and make our community better!
+
+Thanks 🙏
