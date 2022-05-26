@@ -92,6 +92,7 @@ Deal with the multi-threaded programming paradigm.
 | -- | -- |
 | Command | [Go to detail 📄](./CommandPattern/README.md) |
 | Dispose | [Go to detail 📄](./DisposePattern/README.md) |
+| Null Object | [Go to detail 📄](./NullObjectPattern/README.md) |
 
 ### TODO behavioral patterns
 
@@ -101,7 +102,6 @@ Deal with the multi-threaded programming paradigm.
 - [ ] Iterator
 - [ ] Mediator
 - [ ] Memento
-- [ ] Null Object
 - [ ] Observer
 - [ ] Servant
 - [ ] Specification
