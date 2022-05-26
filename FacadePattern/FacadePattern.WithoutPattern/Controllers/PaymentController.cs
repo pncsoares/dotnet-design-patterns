@@ -15,8 +15,8 @@ public class PaymentController : ControllerBase
     }
 
     [HttpPost(Name = "PayForItem")]
-    public void Post([FromBody] string item, [FromBody] double amount)
+    public void Post([FromBody] Purchase input)
     {
-        _paymentService.Pay(item, amount);
+        _paymentService.Pay(input.Item, input.Amount);
     }
 }

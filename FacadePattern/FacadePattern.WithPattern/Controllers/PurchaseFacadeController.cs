@@ -22,17 +22,17 @@ public class PurchaseFacadeController : ControllerBase
     }
 
     [HttpPost(Name = "Purchase")]
-    public IActionResult Post([FromBody] string item, [FromBody] double amount)
+    public IActionResult Post([FromBody] Purchase input)
     {
         var inventory = _inventoryService.Get();
 
-        if (inventory.All(a => a != item))
+        if (inventory.All(a => a != input.Item))
         {
             return BadRequest();
         }
 
-        _paymentService.Pay(item, amount);
-        _notificationService.Send($"Item: {item} purchase with amount: {amount}");
+        _paymentService.Pay(input.Item, input.Amount);
+        _notificationService.Send($"Item: {input.Item} purchase with amount: {input.Amount}");
 
         return Ok();
     }
