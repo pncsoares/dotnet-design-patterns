@@ -90,6 +90,7 @@ Deal with the multi-threaded programming paradigm.
 
 | Name | Information |
 | -- | -- |
+| Strategy | [Go to detail 📄](./StrategyPattern/README.md) |
 | Command | [Go to detail 📄](./CommandPattern/README.md) |
 | Dispose | [Go to detail 📄](./DisposePattern/README.md) |
 | Null Object | [Go to detail 📄](./NullObjectPattern/README.md) |
@@ -106,7 +107,6 @@ Deal with the multi-threaded programming paradigm.
 - [ ] Servant
 - [ ] Specification
 - [ ] State
-- [ ] Strategy
 - [ ] Template Method
 - [ ] Visitor
 
