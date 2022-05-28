@@ -1,6 +1,6 @@
 namespace StrategyPattern.WithPattern.Interfaces;
 
-public interface IEatBehavior
+public interface IEatStrategy
 {
     void Eat();
 }

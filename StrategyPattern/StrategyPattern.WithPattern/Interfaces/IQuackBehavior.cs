@@ -1,6 +1,6 @@
 namespace StrategyPattern.WithPattern.Interfaces;
 
-public interface IQuackBehavior
+public interface IQuackStrategy
 {
     void Quack();
 }

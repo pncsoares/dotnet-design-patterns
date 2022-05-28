@@ -4,8 +4,8 @@ namespace StrategyPattern.WithPattern;
 
 public class MountainDuck : Duck
 {
-    public MountainDuck(IDisplayBehavior displayBehavior, IQuackBehavior quackBehavior, IFlyBehavior flyBehavior, IEatBehavior eatBehavior) 
-        : base(displayBehavior, quackBehavior, flyBehavior, eatBehavior)
+    public MountainDuck(IDisplayStrategy displayStrategy, IQuackStrategy quackStrategy, IFlyStrategy flyStrategy, IEatStrategy eatStrategy) 
+        : base(displayStrategy, quackStrategy, flyStrategy, eatStrategy)
     {
         Console.WriteLine("I am a mountain duck");
     }

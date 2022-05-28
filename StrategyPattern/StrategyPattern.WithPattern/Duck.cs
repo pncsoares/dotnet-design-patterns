@@ -2,19 +2,19 @@ using StrategyPattern.WithPattern.Interfaces;
 
 namespace StrategyPattern.WithPattern;
 
-public abstract class Duck : IDisplayBehavior, IQuackBehavior, IFlyBehavior, IEatBehavior
+public abstract class Duck : IDisplayStrategy, IQuackStrategy, IFlyStrategy, IEatStrategy
 {
-    private readonly IDisplayBehavior _displayBehavior;
-    private readonly IQuackBehavior _quackBehavior;
-    private readonly IFlyBehavior _flyBehavior;
-    private readonly IEatBehavior _eatBehavior;
+    private readonly IDisplayStrategy _displayStrategy;
+    private readonly IQuackStrategy _quackStrategy;
+    private readonly IFlyStrategy _flyStrategy;
+    private readonly IEatStrategy _eatStrategy;
 
-    protected Duck(IDisplayBehavior displayBehavior, IQuackBehavior quackBehavior, IFlyBehavior flyBehavior, IEatBehavior eatBehavior)
+    protected Duck(IDisplayStrategy displayStrategy, IQuackStrategy quackStrategy, IFlyStrategy flyStrategy, IEatStrategy eatStrategy)
     {
-        _displayBehavior = displayBehavior;
-        _quackBehavior = quackBehavior;
-        _flyBehavior = flyBehavior;
-        _eatBehavior = eatBehavior;
+        _displayStrategy = displayStrategy;
+        _quackStrategy = quackStrategy;
+        _flyStrategy = flyStrategy;
+        _eatStrategy = eatStrategy;
 
         ExecuteOperations();
     }
@@ -32,21 +32,21 @@ public abstract class Duck : IDisplayBehavior, IQuackBehavior, IFlyBehavior, IEa
 
     public void Display()
     {
-        _displayBehavior.Display();
+        _displayStrategy.Display();
     }
 
     public void Quack()
     {
-        _quackBehavior.Quack();
+        _quackStrategy.Quack();
     }
     
     public void Fly()
     {
-        _flyBehavior.Fly();
+        _flyStrategy.Fly();
     }
     
     public void Eat()
     {
-        _eatBehavior.Eat();
+        _eatStrategy.Eat();
     }
 }

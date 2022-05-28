@@ -1,8 +1,8 @@
 using StrategyPattern.WithPattern.Interfaces;
 
-namespace StrategyPattern.WithPattern.Implementations.Quack;
+namespace StrategyPattern.WithPattern.Strategies.Quack;
 
-public class NoQuackBehavior : IQuackBehavior
+public class NoQuackStrategy : IQuackStrategy
 {
     public void Quack()
     {

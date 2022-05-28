@@ -1,8 +1,8 @@
 using StrategyPattern.WithPattern.Interfaces;
 
-namespace StrategyPattern.WithPattern.Implementations.Eat;
+namespace StrategyPattern.WithPattern.Strategies.Eat;
 
-public class NoEatBehavior : IEatBehavior
+public class NoEatStrategy : IEatStrategy
 {
     public void Eat()
     {

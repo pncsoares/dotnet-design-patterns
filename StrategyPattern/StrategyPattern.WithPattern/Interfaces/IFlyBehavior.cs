@@ -1,6 +1,6 @@
 namespace StrategyPattern.WithPattern.Interfaces;
 
-public interface IFlyBehavior
+public interface IFlyStrategy
 {
     void Fly();
 }

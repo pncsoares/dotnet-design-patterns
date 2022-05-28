@@ -1,8 +1,8 @@
 using StrategyPattern.WithPattern.Interfaces;
 
-namespace StrategyPattern.WithPattern.Implementations.Display;
+namespace StrategyPattern.WithPattern.Strategies.Display;
 
-public class ToyDisplayBehavior : IDisplayBehavior
+public class ToyDisplayStrategy : IDisplayStrategy
 {
     public void Display()
     {

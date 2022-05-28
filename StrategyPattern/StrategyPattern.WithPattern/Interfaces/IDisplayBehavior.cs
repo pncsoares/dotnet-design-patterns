@@ -1,6 +1,6 @@
 namespace StrategyPattern.WithPattern.Interfaces;
 
-public interface IDisplayBehavior
+public interface IDisplayStrategy
 {
     void Display();
 }

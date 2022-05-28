@@ -1,8 +1,8 @@
 using StrategyPattern.WithPattern.Interfaces;
 
-namespace StrategyPattern.WithPattern.Implementations.Fly;
+namespace StrategyPattern.WithPattern.Strategies.Fly;
 
-public class NoFlyBehavior : IFlyBehavior
+public class NoFlyStrategy : IFlyStrategy
 {
     public void Fly()
     {

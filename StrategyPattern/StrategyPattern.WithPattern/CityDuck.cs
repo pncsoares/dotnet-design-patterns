@@ -4,8 +4,8 @@ namespace StrategyPattern.WithPattern;
 
 public class CityDuck : Duck
 {
-    public CityDuck(IDisplayBehavior displayBehavior, IQuackBehavior quackBehavior, IFlyBehavior flyBehavior, IEatBehavior eatBehavior) 
-        : base(displayBehavior, quackBehavior, flyBehavior, eatBehavior)
+    public CityDuck(IDisplayStrategy displayStrategy, IQuackStrategy quackStrategy, IFlyStrategy flyStrategy, IEatStrategy eatStrategy) 
+        : base(displayStrategy, quackStrategy, flyStrategy, eatStrategy)
     {
         Console.WriteLine("I am a city duck");
     }
