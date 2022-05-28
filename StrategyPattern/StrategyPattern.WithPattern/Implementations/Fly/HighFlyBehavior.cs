@@ -1,6 +1,6 @@
 using StrategyPattern.WithPattern.Interfaces;
 
-namespace StrategyPattern.WithPattern.Implementations;
+namespace StrategyPattern.WithPattern.Implementations.Fly;
 
 public class CloudFlyBehavior : IFlyBehavior
 {

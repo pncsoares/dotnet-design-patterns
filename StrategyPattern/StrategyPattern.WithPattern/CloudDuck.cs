@@ -7,5 +7,6 @@ public class CloudDuck : Duck
     public CloudDuck(IDisplayBehavior displayBehavior, IQuackBehavior quackBehavior, IFlyBehavior flyBehavior, IEatBehavior eatBehavior) 
         : base(displayBehavior, quackBehavior, flyBehavior, eatBehavior)
     {
+        Console.WriteLine("I am a cloud duck");
     }
 }

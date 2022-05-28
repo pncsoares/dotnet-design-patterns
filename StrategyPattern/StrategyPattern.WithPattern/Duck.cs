@@ -16,13 +16,18 @@ public abstract class Duck : IDisplayBehavior, IQuackBehavior, IFlyBehavior, IEa
         _flyBehavior = flyBehavior;
         _eatBehavior = eatBehavior;
 
+        ExecuteOperations();
+    }
+
+    private void ExecuteOperations()
+    {
+        // just to add a space between duck sentences in the console
+        Console.WriteLine();
+        
         Display();
         Quack();
         Fly();
         Eat();
-
-        // just to add a space between duck sentences in the console
-        Console.WriteLine();
     }
 
     public void Display()

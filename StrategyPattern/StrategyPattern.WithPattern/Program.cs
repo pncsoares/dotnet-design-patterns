@@ -1,29 +1,30 @@
 ﻿using StrategyPattern.WithPattern;
-using StrategyPattern.WithPattern.Implementations;
+using StrategyPattern.WithPattern.Implementations.Display;
+using StrategyPattern.WithPattern.Implementations.Eat;
+using StrategyPattern.WithPattern.Implementations.Fly;
+using StrategyPattern.WithPattern.Implementations.Quack;
 
 // display
-var cityDisplayBehavior = new CityDisplayBehavior();
-var wildDisplayBehavior = new WildDisplayBehavior();
-var rubberDisplayBehavior = new RubberDisplayBehavior();
-var cloudDisplayBehavior = new CloudDisplayBehavior();
-var mountainDisplayBehavior = new MountainDisplayBehavior();
+var animalDisplayBehavior = new AnimalDisplayBehavior();
+var toyDisplayBehavior = new ToyDisplayBehavior();
 
 // quack
-var simpleQuackBehavior = new SimpleQuackBehavior();
+var quietQuackBehavior = new QuietQuackBehavior();
+var loudQuackBehavior = new LoudQuackBehavior();
 var noQuackBehavior = new NoQuackBehavior();
 
 // fly
-var simpleFlyBehavior = new SimpleFlyBehavior();
+var lowFlyBehavior = new LowFlyBehavior();
 var noFlyBehavior = new NoFlyBehavior();
 var cloudFlyBehavior = new CloudFlyBehavior();
 
 // eat
-var simpleEatBehavior = new SimpleEatBehavior();
+var meatEatBehavior = new MeatEatBehavior();
 var noEatBehavior = new NoEatBehavior();
-var eatBirdBehavior = new EatBirdBehavior();
+var vegetarianEatBehavior = new VegetarianEatBehavior();
 
-var cityDuck = new CityDuck(cityDisplayBehavior, simpleQuackBehavior, simpleFlyBehavior, simpleEatBehavior);
-var wildDuck = new WildDuck(wildDisplayBehavior, simpleQuackBehavior, simpleFlyBehavior, simpleEatBehavior);
-var rubberDuck = new RubberDuck(rubberDisplayBehavior, noQuackBehavior, noFlyBehavior, noEatBehavior);
-var cloudDuck = new CloudDuck(cloudDisplayBehavior, simpleQuackBehavior, cloudFlyBehavior, eatBirdBehavior);
-var mountainDuck = new MountainDuck(mountainDisplayBehavior, simpleQuackBehavior, cloudFlyBehavior, eatBirdBehavior);
+var cityDuck = new CityDuck(animalDisplayBehavior, quietQuackBehavior, lowFlyBehavior, meatEatBehavior);
+var wildDuck = new WildDuck(animalDisplayBehavior, loudQuackBehavior, lowFlyBehavior, meatEatBehavior);
+var rubberDuck = new RubberDuck(toyDisplayBehavior, noQuackBehavior, noFlyBehavior, noEatBehavior);
+var cloudDuck = new CloudDuck(animalDisplayBehavior, quietQuackBehavior, cloudFlyBehavior, vegetarianEatBehavior);
+var mountainDuck = new MountainDuck(animalDisplayBehavior, loudQuackBehavior, cloudFlyBehavior, vegetarianEatBehavior);

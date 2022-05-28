@@ -7,5 +7,6 @@ public class WildDuck : Duck
     public WildDuck(IDisplayBehavior displayBehavior, IQuackBehavior quackBehavior, IFlyBehavior flyBehavior, IEatBehavior eatBehavior) 
         : base(displayBehavior, quackBehavior, flyBehavior, eatBehavior)
     {
+        Console.WriteLine("I am a wild duck");
     }
 }
