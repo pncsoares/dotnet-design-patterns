@@ -87,10 +87,6 @@ You can check all the available templates in Microsoft's documentation [here](ht
 
 Now that you have the structure and two projects, one that will contain the source code without the design pattern and another that will contain the source code using the design pattern, you can start coding 🧑‍💻
 
-## Add instructions to run the projects
-
-If you created a kind of project that allows it to run, add instructions so who see the repository and wants to give it a try, just need to read instructions and act as is.
-
 ## Add documentation
 
 Finish the good work by adding some documentation, scenarios, pros and cons or other things that you know about the design pattern.
