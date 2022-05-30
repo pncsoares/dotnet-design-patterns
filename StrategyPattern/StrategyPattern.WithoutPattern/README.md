@@ -14,4 +14,4 @@ dotnet run --project ./StrategyPattern/StrategyPattern.WithoutPattern/StrategyPa
 
 Now lets see the code using the strategy pattern 👇
 
-[📄 Code using strategy pattern](./StrategyPattern.WithPattern/README.md)
+[📄 Code using strategy pattern](../StrategyPattern.WithPattern/README.md)

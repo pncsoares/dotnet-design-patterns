@@ -88,4 +88,4 @@ Check the code and run it to see in action. To do that, you can use your IDE but
 dotnet run --project ./StrategyPattern/StrategyPattern.WithPattern/StrategyPattern.WithPattern.csproj
 ```
 
-[📄 Code without strategy pattern](./StrategyPattern.WithoutPattern/README.md)
+[📄 Code without strategy pattern](../StrategyPattern.WithoutPattern/README.md)
