@@ -85,4 +85,4 @@ As soon as you start to share behaviors horizontally, you will get in trouble un
 
 [📄 Code without design pattern](./StrategyPattern.WithoutPattern/README.md)
 
-[📄 Code using design pattern](./StrategyPattern.WithoutPattern/README.md)
+[📄 Code using design pattern](./StrategyPattern.WithPattern/README.md)
