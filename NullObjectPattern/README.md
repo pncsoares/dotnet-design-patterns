@@ -20,13 +20,13 @@ Its use is hard-coded
 
 **Thus, we build a no-operation, non-functioning inheritor of B and pass it into A**
 
-## Advantages
+## 👍 Advantages
 
 - It defines class hierarchies consisting of real objects and null objects. Null objects can be used in place of real objects when the object is expected to do nothing. Whenever client code expects a real object, it can also take a null object.
 
 - Also makes the client code simple. Clients can treat real collaborators and null collaborators uniformly. Clients normally don’t know whether they’re dealing with a real or a null collaborator. This simplifies client code, because it avoids having to write testing code which handles the null collaborator specially.
 
-## Disadvantages
+## 👎 Disadvantages
 
 - Can be difficult to implement if various clients do not agree on how the null object should do nothing as when your AbstractObject interface is not well defined.
 

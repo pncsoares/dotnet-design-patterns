@@ -4,13 +4,13 @@ Separate the construction of a complex object from its representation, allowing 
 
 💡 Useful when you need to create objects that have many different working parts that need to all come together to create one single object.
 
-## Advantages
+## 👍 Advantages
 
 - Allows you to vary a product's internal representation
 - Encapsulates code for construction and representation
 - Provides control over steps of construction process
 
-## Disadvantages
+## 👎 Disadvantages
 
 - It does create more code
 - Too many constructors to maintain

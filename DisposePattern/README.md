@@ -6,12 +6,12 @@ The .NET garbage collector does not allocate or release unmanaged memory. The pa
 
 To help ensure that resources are always cleaned up appropriately, a Dispose method should be idempotent, such that it is callable multiple times without throwing an exception. Furthermore, subsequent invocations of Dispose should do nothing.
 
-## Advantages
+## 👍 Advantages
 
 - Improves performance
 - Optimizes memory by releasing unmanageable objects and scarce resources
 
-## Disadvantages
+## 👎 Disadvantages
 
 - Writing code for an object's finalizer is a complex task that can cause problems if not done correctly
 
