@@ -346,8 +346,6 @@ weatherStation.SetTemperature(39.8f);
 [Weather App] The temperature is 39.8ºC
 ```
 
-<br>
-
 # Try it yourself
 
 You can run the console application to see the output in the console.
