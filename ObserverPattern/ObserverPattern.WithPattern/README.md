@@ -316,8 +316,6 @@ weatherStation.Register(channel2);
 var weatherApp = new WeatherApp(weatherStation, displayTemperature);
 weatherStation.Register(weatherApp);
 
-// the temperature is different within almost the same datetime.now but this is just to exemplify a real scenario 👇
-
 weatherStation.SetTemperature(22.3f);
 
 // we can register and unregister a observer/subscriber whenever we want
@@ -325,10 +323,8 @@ weatherStation.SetTemperature(22.3f);
 weatherStation.Unregister(channel2);
 // now, the next temperature measurements will be displayed only in channel1 and weather app
 
-Console.WriteLine(); // just to format the console log
 weatherStation.SetTemperature(16);
 
-Console.WriteLine(); // just to format the console log
 weatherStation.SetTemperature(39.8f);
 ```
 
