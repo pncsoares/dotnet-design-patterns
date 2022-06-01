@@ -3,7 +3,7 @@ using Timer = System.Timers.Timer;
 
 namespace ObserverPattern.WithoutPattern;
 
-public class WeatherApp
+public class NewsAgency
 {
     private readonly WeatherStation _weatherStation;
     
@@ -11,19 +11,19 @@ public class WeatherApp
     /// The timer that will be responsible to do the polling mechanism
     /// </summary>
     private readonly Timer _timer;
-    
-    private const string Name = "Weather App";
+
+    private const string Name = "News Agency";
     
     /// <summary>
     /// The temperature in degrees Celsius
     /// </summary>
     private float Celsius { get; set; }
 
-    public WeatherApp(WeatherStation weatherStation)
+    public NewsAgency(WeatherStation weatherStation)
     {
         _weatherStation = weatherStation;
 
-        _timer = new Timer(1000)
+        _timer = new Timer(500)
         {
             AutoReset = true
         };

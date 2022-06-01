@@ -7,6 +7,9 @@ weatherStation.SetTemperature(12.2f);
 var weatherApp = new WeatherApp(weatherStation);
 weatherApp.StartTimer();
 
+var newsAgency = new NewsAgency(weatherStation);
+newsAgency.StartTimer();
+
 // wait a bit to simulate real life scenario
 Thread.Sleep(3000);
 
@@ -26,3 +29,4 @@ weatherStation.SetTemperature(12.6f);
 Thread.Sleep(2000);
 
 weatherApp.StopTimer();
+newsAgency.StopTimer();
