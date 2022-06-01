@@ -15,7 +15,21 @@ Also, we are assuming the following for our code example:
 
 # Communication Mechanism
 
-There are two communication mechanisms, pull or push
+There are two communication mechanisms, pull or push.
+
+> 📝 **NOTE**
+>
+> This push mechanism is not related to this sentence: _"The observer pattern is essentially about **push** vs **poll**. Its about moving from poll architecture to push architecture."_
+> 
+> There are two phases:
+>
+> **Phase 1**: How the observers know that the observable changed state
+>
+> We already saw that the observer pattern is about moving from poll architecture to push architecture because only the observable knows when the state has changed because the state is observable's responsibility.
+>
+> **Phase 2**: How the observable and the observers exchange the updated state
+>
+> Now we are talking about the data be exchange using push mechanism or pull mechanism. To understand this better, we can call a `push push` or `push pull` mechanism because in fact, the phase 1 is a push mechanism and the phase 2 can be a push or a pull mechanism. So, now, lets analyze the phase 2 push and pull mechanisms 👇
 
 ## Pull 📤
 
