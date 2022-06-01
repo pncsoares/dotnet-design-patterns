@@ -58,6 +58,10 @@ Like token systems in a bank: In this all observers (different LEDs) just need o
 <details>
     <summary><b>Using Pull Mechanism</b></summary>
 
+When using the pull mechanism, the Concrete Observer must have a reference to the Concrete Observable because the observer needs to select data from the observable and to do that, it needs to access its `GetState` method.
+
+![Pull mechanism class diagram](../../.github/images/ObserverPattern/class-diagram-pull-mechanism.png)
+
 `IObservable.cs`
 
 ```csharp
@@ -177,10 +181,44 @@ public class ConcreteObserver : IObserver
 }
 ```
 
+`Program.cs`
+
+```csharp
+using ObserverPattern.WithPattern;
+using ObserverPattern.WithPattern.Implementations;
+
+var weatherStation = new WeatherStation();
+var displayTemperature = new DisplayTemperature();
+
+var channel1 = new NewsAgency("Channel 1", weatherStation, displayTemperature);
+weatherStation.Register(channel1);
+
+var channel2 = new NewsAgency("Channel 2", weatherStation, displayTemperature);
+weatherStation.Register(channel2);
+
+var weatherApp = new WeatherApp(weatherStation, displayTemperature);
+weatherStation.Register(weatherApp);
+
+weatherStation.SetTemperature(22.3f);
+
+// we can register and unregister a observer/subscriber whenever we want
+// lets unregister channel2 for example
+weatherStation.Unregister(channel2);
+// now, the next temperature measurements will be displayed only in channel1 and weather app
+
+weatherStation.SetTemperature(16);
+
+weatherStation.SetTemperature(39.8f);
+```
+
 </details>
 
 <details>
     <summary><b>Using Push Mechanism</b></summary>
+
+Using the push mechanism, the concrete observer no longer needs to reference the concrete observable because the data is pushed from the observable to the observer in the method `Notify`.
+
+![Pull mechanism class diagram](../../.github/images/ObserverPattern/class-diagram-push-mechanism.png)
 
 `IObservable.cs`
 
@@ -278,12 +316,10 @@ public interface IObserver
 /// </summary>
 public class ConcreteObserver : IObserver
 {
-    private readonly ConcreteObservable _observable;
     private readonly IDisplay _displayImplementation;
 
-    public ConcreteObserver(ConcreteObservable observable, IDisplay displayImplementation)
+    public ConcreteObserver(IDisplay displayImplementation)
     {
-        _observable = observable;
         _displayImplementation = displayImplementation;
     }
     
@@ -294,11 +330,7 @@ public class ConcreteObserver : IObserver
 }
 ```
 
-</details>
-
-<br>
-
-In both the scenarios, the code in `Program.cs` is the same:
+`Program.cs`
 
 ```csharp
 using ObserverPattern.WithPattern;
@@ -307,13 +339,13 @@ using ObserverPattern.WithPattern.Implementations;
 var weatherStation = new WeatherStation();
 var displayTemperature = new DisplayTemperature();
 
-var channel1 = new NewsAgency("Channel 1", weatherStation, displayTemperature);
+var channel1 = new NewsAgency("Channel 1", displayTemperature);
 weatherStation.Register(channel1);
 
-var channel2 = new NewsAgency("Channel 2", weatherStation, displayTemperature);
+var channel2 = new NewsAgency("Channel 2", displayTemperature);
 weatherStation.Register(channel2);
 
-var weatherApp = new WeatherApp(weatherStation, displayTemperature);
+var weatherApp = new WeatherApp(displayTemperature);
 weatherStation.Register(weatherApp);
 
 weatherStation.SetTemperature(22.3f);
@@ -327,6 +359,10 @@ weatherStation.SetTemperature(16);
 
 weatherStation.SetTemperature(39.8f);
 ```
+
+</details>
+
+<br>
 
 ### Example of an Output
 

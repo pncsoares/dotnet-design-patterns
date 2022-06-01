@@ -8,13 +8,11 @@ namespace ObserverPattern.WithPattern.Implementations;
 public class NewsAgency : IObserver
 {
     private readonly string _name;
-    private readonly WeatherStation _observable;
     private readonly IDisplay _displayImplementation;
 
-    public NewsAgency(string name, WeatherStation observable, IDisplay displayImplementation)
+    public NewsAgency(string name, IDisplay displayImplementation)
     {
         _name = name;
-        _observable = observable;
         _displayImplementation = displayImplementation;
     }
     

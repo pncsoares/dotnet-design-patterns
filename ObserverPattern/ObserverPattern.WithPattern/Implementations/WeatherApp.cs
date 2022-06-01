@@ -7,12 +7,10 @@ namespace ObserverPattern.WithPattern.Implementations;
 /// </summary>
 public class WeatherApp : IObserver
 {
-    private readonly WeatherStation _observable;
     private readonly IDisplay _displayImplementation;
 
-    public WeatherApp(WeatherStation observable, IDisplay displayImplementation)
+    public WeatherApp(IDisplay displayImplementation)
     {
-        _observable = observable;
         _displayImplementation = displayImplementation;
     }
     

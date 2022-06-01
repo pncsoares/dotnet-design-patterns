@@ -1,16 +1,16 @@
-﻿using ObserverPattern.WithPattern;
+﻿using System;
 using ObserverPattern.WithPattern.Implementations;
 
 var weatherStation = new WeatherStation();
 var displayTemperature = new DisplayTemperature();
 
-var channel1 = new NewsAgency("Channel 1", weatherStation, displayTemperature);
+var channel1 = new NewsAgency("Channel 1", displayTemperature);
 weatherStation.Register(channel1);
 
-var channel2 = new NewsAgency("Channel 2", weatherStation, displayTemperature);
+var channel2 = new NewsAgency("Channel 2", displayTemperature);
 weatherStation.Register(channel2);
 
-var weatherApp = new WeatherApp(weatherStation, displayTemperature);
+var weatherApp = new WeatherApp(displayTemperature);
 weatherStation.Register(weatherApp);
 
 weatherStation.SetTemperature(22.3f);
