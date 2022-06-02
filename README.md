@@ -70,6 +70,7 @@ Deal with the multi-threaded programming paradigm.
 
 | Name | Information |
 | -- | -- |
+| Decorator | [Go to detail 📄](./DecoratorPattern/README.md) |
 | Facade | [Go to detail 📄](./FacadePattern/README.md) |
 
 ### TODO structural patterns
@@ -77,7 +78,6 @@ Deal with the multi-threaded programming paradigm.
 - [ ] Adapter
 - [ ] Bridge
 - [ ] Composite
-- [ ] Decorator
 - [ ] Extension Object
 - [ ] Flyweight
 - [ ] Front Controller
