@@ -1,6 +1,10 @@
 # Code using decorator design pattern
 
-Here, the example is the same, a pizza factory and after applying the Decorator pattern, the pizzas are custom made. If the customer wants a Carbonara pizza, all the ingredients to that pizza receipt will be added. If a customer does not like cheese (hope not 🙂), we just need to instruct the code to not use the cheese decorator and so on.
+The class diagram of the Decorator pattern is the following:
+
+![Class diagram](../../.github/images/DecoratorPattern/class-diagram.png)
+
+We will use the same Pizza factory but this time using Decorator pattern, the pizzas are custom made. If the customer wants a Carbonara pizza, all the ingredients to that pizza receipt will be added. If a customer does not like cheese (hope not 🙂), we just need to instruct the code to not use the cheese decorator and so on.
 
 Also, if the price for a specific ingredient changes, we just need to change the price of that particular ingredient and all the application continues to work properly.
 
