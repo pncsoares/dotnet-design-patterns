@@ -50,14 +50,12 @@ Deal with the multi-threaded programming paradigm.
 
 ## Creational patterns
 
-| Name | Information |
-| -- | -- |
-| Builder | [Go to detail 📄](./BuilderPattern/README.md) |
-| Singleton | [Go to detail 📄](./SingletonPattern/README.md) |
+- [Builder](./BuilderPattern/README.md)
+- [Singleton](./SingletonPattern/README.md)
 
 ### TODO creational patterns
 
-- [ ] Factory
+- [ ] Factory Method
 - [ ] Abstract Factory
 - [ ] Dependency Injection
 - [ ] Lazy Initialization
@@ -68,10 +66,8 @@ Deal with the multi-threaded programming paradigm.
 
 ## Structural patterns
 
-| Name | Information |
-| -- | -- |
-| Decorator | [Go to detail 📄](./DecoratorPattern/README.md) |
-| Facade | [Go to detail 📄](./FacadePattern/README.md) |
+- [Decorator](./DecoratorPattern/README.md)
+- [Facade](./FacadePattern/README.md)
 
 ### TODO structural patterns
 
@@ -88,13 +84,11 @@ Deal with the multi-threaded programming paradigm.
 
 ## Behavioral patterns
 
-| Name | Information |
-| -- | -- |
-| Strategy | [Go to detail 📄](./StrategyPattern/README.md) |
-| Observer | [Go to detail 📄](./ObserverPattern/README.md) |
-| Command | [Go to detail 📄](./CommandPattern/README.md) |
-| Dispose | [Go to detail 📄](./DisposePattern/README.md) |
-| Null Object | [Go to detail 📄](./NullObjectPattern/README.md) |
+- [Strategy](./StrategyPattern/README.md)
+- [Observer](./ObserverPattern/README.md)
+- [Command](./CommandPattern/README.md)
+- [Dispose](./DisposePattern/README.md)
+- [Null Object](./NullObjectPattern/README.md)
 
 ### TODO behavioral patterns
 
@@ -112,9 +106,7 @@ Deal with the multi-threaded programming paradigm.
 
 ## Concurrency patterns
 
-| Name | Information |
-| -- | -- |
-| - | - |
+- _Empty for now..._
 
 ### TODO concurrency patterns
 
