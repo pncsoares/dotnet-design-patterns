@@ -51,7 +51,7 @@ class OrangePicker : FruitPicker {
 }
 ```
 
-[📄 Read Factory Method detailed documentation](./FactoryMethodPattern/README.md)
+[📄 Read Factory Method detailed documentation](../FactoryMethodPattern/README.md)
 
 ## Abstract Factory
 
