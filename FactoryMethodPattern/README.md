@@ -48,7 +48,7 @@ And it not only about which class can instantiate, it's also about what you actu
 
 > Factory method lets the class defer instantiation to subclasses
 
-TODO: finish this sentence
+This means that the common ancestors (`Product` in the generic diagram above) defer instantiation to the subclasses (`ConcreteProduct` in the generic diagram). For example, now taking the example class diagram, that the `Animal` does not have to make the decision about which of the animal classes (`Cat`, `Dog` or `Duck`) to instantiate. The ones that needs to decide are the `RandomAnimalFactory` and the `BalancedAnimalFactory`.
 
 ## 👍 Advantages
 
