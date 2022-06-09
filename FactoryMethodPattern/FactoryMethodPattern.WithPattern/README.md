@@ -120,25 +120,19 @@ public class BalancedAnimalFactory : IAnimalFactory
         {
             case 0:
                 IncrementCounter();
-                return CreateCat;
+                return new Cat();
             
             case 1:
                 IncrementCounter();
-                return CreateDog;
+                return new Dog();
             
             case 2:
                 ResetCounter();
-                return CreateDuck;
+                return new Duck();
         }
 
         throw new InvalidOperationException();
     }
-
-    private static Cat CreateCat => new Cat();
-    
-    private static Dog CreateDog => new Dog();
-    
-    private static Duck CreateDuck => new Duck();
 
     private void IncrementCounter()
     {
