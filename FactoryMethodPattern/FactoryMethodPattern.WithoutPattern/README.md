@@ -1,6 +1,10 @@
 # Code without factory method design pattern
 
+So, we have the same animal factory example that we saw before:
 
+> The `RandomAnimalFactory` is a factory method that always creates a random animal. It does not have state, every time we invoke it, a random `Animal` is returned and the `BalancedAnimalFactory` has state, it starts to create a new `Animal` but then, only randomizes the other animals different that the ones that were already created.
+
+Take a look at the code and analyze how the responsibility of creating a new `Animal` is statically created in the `Program.cs` file.
 
 # Try it yourself
 
