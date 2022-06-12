@@ -55,8 +55,8 @@ Deal with the multi-threaded programming paradigm.
 
 > There are 3 versions of the factory pattern, the simple factory, the factory method and the abstract factory. To know more, read [this file](./.github/FACTORY.md).
 
-- [Builder](./BuilderPattern/README.md)
 - [Singleton](./SingletonPattern/README.md)
+- [Builder](./BuilderPattern/README.md)
 
 ### TODO creational patterns
 
