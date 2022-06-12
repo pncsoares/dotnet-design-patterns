@@ -63,6 +63,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethodPattern.Withou
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethodPattern.WithPattern", "FactoryMethodPattern\FactoryMethodPattern.WithPattern\FactoryMethodPattern.WithPattern.csproj", "{2F94541F-C4A9-46F5-9DF3-BB6BBD27A1CA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AbstractFactoryPattern", "AbstractFactoryPattern", "{74D80AF3-20C8-4C9F-87A2-34C14E725C16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactoryPattern.WithoutPattern", "AbstractFactoryPattern\AbstractFactoryPattern.WithoutPattern\AbstractFactoryPattern.WithoutPattern.csproj", "{52020A3C-B0CD-4A7A-991E-FFD76E56B417}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactoryPattern.WithPattern", "AbstractFactoryPattern\AbstractFactoryPattern.WithPattern\AbstractFactoryPattern.WithPattern.csproj", "{D0526B8F-3D76-425B-9233-61E598F4ADDA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -92,6 +98,8 @@ Global
 		{10BE3E90-16D8-48F2-AA00-EB0918CB5513} = {706D0E1F-9E7A-41A9-B25E-C335448973BB}
 		{930FF185-04E3-40AE-BEA6-7FBE82CFAD79} = {42E29432-E1B7-41E1-9F84-DCB2AB37D9EF}
 		{2F94541F-C4A9-46F5-9DF3-BB6BBD27A1CA} = {42E29432-E1B7-41E1-9F84-DCB2AB37D9EF}
+		{52020A3C-B0CD-4A7A-991E-FFD76E56B417} = {74D80AF3-20C8-4C9F-87A2-34C14E725C16}
+		{D0526B8F-3D76-425B-9233-61E598F4ADDA} = {74D80AF3-20C8-4C9F-87A2-34C14E725C16}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{5B709364-032C-4447-AA31-DA2E0431614E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -174,5 +182,13 @@ Global
 		{2F94541F-C4A9-46F5-9DF3-BB6BBD27A1CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F94541F-C4A9-46F5-9DF3-BB6BBD27A1CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F94541F-C4A9-46F5-9DF3-BB6BBD27A1CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52020A3C-B0CD-4A7A-991E-FFD76E56B417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52020A3C-B0CD-4A7A-991E-FFD76E56B417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52020A3C-B0CD-4A7A-991E-FFD76E56B417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52020A3C-B0CD-4A7A-991E-FFD76E56B417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0526B8F-3D76-425B-9233-61E598F4ADDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0526B8F-3D76-425B-9233-61E598F4ADDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0526B8F-3D76-425B-9233-61E598F4ADDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0526B8F-3D76-425B-9233-61E598F4ADDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

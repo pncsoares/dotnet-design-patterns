@@ -51,6 +51,7 @@ Deal with the multi-threaded programming paradigm.
 ## Creational patterns
 
 - [Factory Method](./FactoryMethodPattern/README.md)
+- [Abstract Factory](./AbstractFactoryPattern/README.md)
 
 > There are 3 versions of the factory pattern, the simple factory, the factory method and the abstract factory. To know more, read [this file](./.github/FACTORY.md).
 
@@ -59,7 +60,6 @@ Deal with the multi-threaded programming paradigm.
 
 ### TODO creational patterns
 
-- [ ] Abstract Factory
 - [ ] Dependency Injection
 - [ ] Lazy Initialization
 - [ ] Multiton
